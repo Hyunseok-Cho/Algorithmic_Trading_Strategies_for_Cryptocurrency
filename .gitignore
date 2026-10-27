@@ -1,0 +1,55 @@
+# Local environment variables; commit only sanitized examples.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local
+
+# Secrets and local credentials (at any directory depth).
+secrets/
+.secrets/
+credentials/
+.aws/
+.ssh/
+.npmrc
+.pypirc
+.netrc
+credentials.json
+credentials.*.json
+service-account*.json
+service_account*.json
+client_secret*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+
+# Local databases and logs.
+*.db
+*.sqlite
+*.sqlite3
+*.log
+logs/
+
+# Dependencies, build output, and Python environments.
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE and operating-system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
