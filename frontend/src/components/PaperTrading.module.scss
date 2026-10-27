@@ -1,0 +1,43 @@
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metricLabel {
+  font-size: 0.875rem;
+  color: var(--cds-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.metricValue {
+  font-size: 1.75rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+@media (max-width: 672px) {
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media print {
+  .tableWrapper {
+    overflow: visible;
+  }
+
+  .metrics {
+    break-inside: avoid;
+  }
+}
+
+.section {
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}

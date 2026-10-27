@@ -1,0 +1,94 @@
+.tradeExecution {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.tradingWorkspace {
+  margin-top: 1rem;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  position: relative;
+}
+
+.chartToolbar {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  > :global(.cds--form-item) {
+    min-width: 220px;
+    flex: 1;
+  }
+}
+
+.indicatorPicker {
+  position: relative;
+}
+
+.indicatorPopover {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40px;
+  min-width: 280px;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px #0002;
+  legend {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.chartContext,
+.chartStatus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.mockChartBadge {
+  color: #8e6a00;
+}
+
+.chartLiveLegend {
+  min-height: 38px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.interactiveChart {
+  width: 100%;
+}
+
+.chartFillTooltip {
+  position: absolute;
+  top: 155px;
+  left: 16px;
+  max-width: 80%;
+  z-index: 3;
+  background: #161616;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+.chartStatus {
+  border-top: 1px solid #eee;
+  color: #6f6f6f;
+}
+
+.tradeExecution {
+  margin-bottom: 2rem;
+}

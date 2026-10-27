@@ -1,0 +1,14 @@
+.footer {
+  padding: 1rem;
+  border-top: 1px solid var(--cds-border-subtle);
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media print {
+  .footer {
+    display: none !important;
+  }
+}
