@@ -1,0 +1,30 @@
+# MACD v2: opposite crossings plus entry-price SL 3%; no TP.
+exchange: binance
+market_type: perpetual
+symbol: "BTC/USDT:USDT"
+timeframe: 1h
+start_time: "2024-01-02T00:00:00Z"
+end_time: "2026-11-01T00:00:00Z"
+strategy_id: macd
+strategy_version: v2
+strategy_parameters:
+  fast: 12
+  slow: 26
+  signal: 9
+initial_capital: "1000"
+base_currency: USDT
+allocation_pct: "100"
+direction_mode: long_short
+leverage: "2"
+fee_rate_open: "0.0005"
+fee_rate_close: "0.0005"
+slippage_bps: "5"
+warmup_bars: 34
+position_mode: one_way
+margin_mode: isolated
+funding_mode: assume_zero
+maintenance_margin_rate: "0.005"
+liquidation_fee_rate: "0.005"
+close_open_position_at_end: true
+stop_loss_pct: "3"
+take_profit_pct: null
