@@ -1,0 +1,27 @@
+# Local configuration; keep the sanitized setup example.
+.env
+.env.*
+!.env.example
+
+# Downloaded market data and generated reports, including nested output.
+# Small deterministic test fixtures remain trackable under tests/fixtures/.
+/data/*
+!/data/.gitkeep
+/reports/*
+!/reports/.gitkeep
+
+# Database backups and local PostgreSQL storage.
+*.dump
+*.backup
+*.sql.gz
+/pgdata/
+
+# Python packaging, test coverage, and tool caches.
+/build/
+*.egg-info/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
